@@ -43,8 +43,8 @@ char* solution(const char* code) {
     }
     
     if (strlen(answer) == 0) {
-        free(answer); // 기존에 비어있는 공간 해제
-        char* empty_res = (char*)malloc(6); // "EMPTY" + '\0' 자리를 위해 6바이트 할당
+        free(answer);
+        char* empty_res = (char*)malloc(6);
         strcpy(empty_res, "EMPTY");
         return empty_res;
     }
